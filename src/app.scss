@@ -1,0 +1,44 @@
+@import 'normalize-scss';
+@include normalize();
+
+.App {
+  min-height: 100vh;
+  background: #444;
+  color: #ccc;
+
+  header {
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #game {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+
+    button {
+      margin: 5px;
+    }
+  }
+
+  #gameboard {
+    height: 400px;
+    width: 400px;
+
+    background-color: #44c;
+
+    rect.unknown {
+      fill: #888;
+    }
+    rect.known {
+      fill: #ccc;
+    }
+    rect.bomb {
+      fill: #f44;
+    }
+    rect.empty {
+      fill: #ddd;
+    }
+  }
+}
