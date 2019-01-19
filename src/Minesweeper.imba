@@ -53,13 +53,18 @@ export class Minesweeper
           res += 1
     res
 
-  def reveal(cell)
+  def reveal_click(cell)
+    return if finished
     unless @initialized
       setup_bombs(cell:x, cell:y)
+    reveal(cell)
+
+  def reveal(cell)
     return if cell:known or cell:flag
     cell:known = true
     if cell:bomb
-      @lost = true
+      for c in @cells
+        c:known = true
       return
     let x = cell:x
     let y = cell:y
@@ -73,7 +78,7 @@ export class Minesweeper
 
   def won
     @cells.every do |c|
-      c:known or c:bomb
+      c:known === !c:bomb
 
   def lost
     @cells.some do |c|

@@ -33,7 +33,7 @@ tag Cell
 
 tag Game
   def onreveal(event, cell)
-    data.reveal(cell)
+    data.reveal_click(cell)
 
   def render
     let cls1 = "x{data:_xsize}"
