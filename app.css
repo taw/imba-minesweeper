@@ -427,6 +427,7 @@ template {
       width: 30px;
       line-height: 30px;
       font-size: 24px;
+      font-weight: bold;
       border: 1px solid black;
       background-color: #ccc;
       transition: background-color 0.2s; }
@@ -443,12 +444,12 @@ template {
       .App .Game .Cell.cell-3 {
         color: red; }
       .App .Game .Cell.cell-4 {
-        color: red; }
+        color: #808; }
       .App .Game .Cell.cell-5 {
-        color: red; }
+        color: #802; }
       .App .Game .Cell.cell-6 {
-        color: red; }
+        color: #0aa; }
       .App .Game .Cell.cell-7 {
-        color: red; }
+        color: #000; }
       .App .Game .Cell.cell-8 {
-        color: red; }
+        color: #555; }
