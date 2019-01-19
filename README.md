@@ -1,6 +1,6 @@
 # imba-minesweeper
 
-Minesweeper in Imba. (unfinished)
+Minesweeper in Imba.
 
 ## Install dependencies
 
